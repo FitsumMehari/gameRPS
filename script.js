@@ -63,8 +63,6 @@ $(document).ready(function() {
 
     function setScores(winner) {
         if (winner === 'tie') {
-            // yourScore += 1;
-            // compScore += 1;
             $('#your-score').text(yourScore);
             $('#comp-score').text(compScore);
         } else if (winner === 'o1') {
