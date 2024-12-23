@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     var yourScore = 0;
     var compScore = 0;
 
@@ -41,7 +41,7 @@ $(document).ready(function () {
     $("#scs-btn").on('click', () => {
         $("#your-choice").text('Scissor');
         $("#comp-choice").text(compTurn());
-        
+
         var winner = logic($("#your-choice").text(), $("#comp-choice").text());
         setScores(winner);
     })
@@ -63,8 +63,8 @@ $(document).ready(function () {
 
     function setScores(winner) {
         if (winner === 'tie') {
-            yourScore += 1;
-            compScore += 1;
+            // yourScore += 1;
+            // compScore += 1;
             $('#your-score').text(yourScore);
             $('#comp-score').text(compScore);
         } else if (winner === 'o1') {
